@@ -59,6 +59,6 @@ if __name__ == '__main__':
     file_path = "~/Library/Containers/com.tencent.xinWeChat/Data/.wxapplet/packages/wxd9813e0a0d4d4156/1726/_pages_shopping_.wxapkg"
     wxapkg = open(file_path, 'rb').read()
     if not is_dec(wxapkg):
-        print("微信小程序未解密,不只支持")
+        print("微信小程序未解密,不支持")
         exit(0)
     exc_header(wxapkg)
